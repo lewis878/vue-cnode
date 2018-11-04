@@ -44,7 +44,8 @@
           <li v-for="(item,index) in topic.replies">
             <div class="base">
               <router-link :to="`/user/${item.author.loginname}`">
-                <img src="../common/image/default_avatar.jpeg" :data-src="item.author.avatar_url" width="40" height="40" class="avatar">
+                <img src="../common/image/default_avatar.jpeg" :data-src="item.author.avatar_url" width="40" height="40"
+                     class="avatar">
               </router-link>
               <div class="center">
                 <p class="author-name">{{item.author.loginname}}</p>
@@ -116,6 +117,8 @@
       })
       this.lazyLoad()
       $(window).scroll(this.lazyLoad)
+      //解决iOS上切换路由时,出现白屏的问题
+      window.scrollTo(0, 0)
     },
     methods: {
       // 获取主题详情
