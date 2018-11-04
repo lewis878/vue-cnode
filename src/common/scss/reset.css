@@ -83,7 +83,6 @@ html, body {
   font-family: -apple-system, "PingFang SC", "Helvetica Neue",
   "Microsoft YaHei", "宋体", sans-serif;
   line-height: 1.5;
-  touch-action: none;
   word-wrap: break-word;
   /*清除移动端默认的点击高亮效果*/
   -webkit-tap-highlight-color: transparent;
