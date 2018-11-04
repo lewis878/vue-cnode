@@ -117,8 +117,6 @@
       })
       this.lazyLoad()
       $(window).scroll(this.lazyLoad)
-      //解决iOS上切换路由时,出现白屏的问题
-      window.scrollTo(0, 0)
     },
     methods: {
       // 获取主题详情
