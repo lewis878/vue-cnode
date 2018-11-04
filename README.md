@@ -1,4 +1,4 @@
-# CNode Project
+# vue-cnode
 
 ## 项目描述
 > 该项目是基于[Cnodejs](https://cnodejs.org)的api,采用vue.js重写的单页应用.
