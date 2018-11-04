@@ -1,0 +1,98 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+td, th, caption {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+input, textarea, select, button {
+  font: 14px -apple-system, "PingFang SC", "Helvetica Neue",
+  "Microsoft YaHei", "宋体", sans-serif;
+  /*清除移动端默认的表单样式: 如内阴影效果*/
+  -webkit-appearance: none;
+  border: 0;
+  outline: none;
+  color: #555;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999; /*输入框提示语的字体样式*/
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: inline-block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #fff;
+  color: #555;
+  font-size: 14px;
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue",
+  "Microsoft YaHei", "宋体", sans-serif;
+  line-height: 1.5;
+  touch-action: none;
+  word-wrap: break-word;
+  /*清除移动端默认的点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+  /*不想让iPhone横坚屏切换的时候调节文字*/
+  -webkit-text-size-adjust: 100%;
+  /*如果有溢出自动形成滚动条*/
+  overflow-y: auto;
+}
+
+[v-cloak]{
+  display: none;
+}
